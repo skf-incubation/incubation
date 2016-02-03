@@ -1,3 +1,5 @@
+incubation_events = ['Robotics','Coding','App Development','Bridge Building'];
+
 Template.user_form_layout.rendered = function() {
     // On template change, the DOM body classes will reactivly change
     document.body.className = "blue darken-2";
@@ -27,6 +29,10 @@ Template.logged_in_nav_bar.events({
     	});
     }
 });
+
+Template.sample_add.helpers({
+    event_id:incubation_events[0],
+})
 
 Template.nav_bar.rendered = initializeNav;
 Template.side_nav.rendered = initializeNav;

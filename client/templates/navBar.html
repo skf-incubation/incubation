@@ -6,8 +6,13 @@
 	</ul>
 	<nav class="blue darken-2">
 		<div class="nav-wrapper">
+		<ul id="nav-mobile" class="left hide-on-med-and-down">
+			<li><a href="/">INCUBATION</a></li>
+		</ul>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-		    	<li><a href="/">About</a></li>
+				<li><a href="/">Updates</a></li>
+				<li><a href="/">Events</a></li>
+			    <li><a href="/">About</a></li>
 		    	{{#if userName}}
 		    		<li><a id="logout" class="waves-effect waves-dark" href="/">{{ userName }}</a></li>
 		    	{{/if}}

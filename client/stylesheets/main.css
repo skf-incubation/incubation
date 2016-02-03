@@ -1,7 +1,19 @@
 /* CSS declarations go here */
 
 body {
-	background-color: #1976D2 !important;
+	background-color: url("http://materializecss.com/images/parallax2.jpg");
+	/* #1976D2 !important; */
+}
+
+.wrapper {
+	margin-left: 400px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.mdi-navigation-menu {
+	padding-left: 7px;
 }
 
 .cursor_pointer {
@@ -53,6 +65,9 @@ header, main, footer {
 	header, main, footer {
 		/*padding-left: 0;*/
 	}
+	.wrapper {
+	display:none;
+}
 }
 
 

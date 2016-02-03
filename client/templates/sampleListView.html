@@ -18,6 +18,8 @@
 <template name="sample_add">
 <form class="new_sample_form col s12">
   <div class="row">
+  <br>
+    <h5>Registration for: {{event_id}}</h5>
     <div class="input-field col s12 m4">
       <input id="first_name" type="text" class="validate">
       <label for="first_name">First Name</label>
@@ -25,6 +27,14 @@
     <div class="input-field col s12 m4">
       <input id="last_name" type="text" class="validate">
       <label for="last_name">Last Name</label>
+    </div>
+    <div class="input-field col s12 m4">
+      <input id="last_name" type="text" class="validate">
+      <label for="last_name">Department</label>
+    </div>
+    <div class="input-field col s12 m4">
+      <input id="last_name" type="text" class="validate">
+      <label for="last_name">Roll No</label>
     </div>
     <div class="valign col s12 m2">
 	    <div>
@@ -37,7 +47,8 @@
 	    </div>
     </div>
     <div class="col s12 m1">
-    	<button class="btn btn-floating btn-large waves-effect waves-light red" type="submit"><i class="material-icons">add</i></button>
+    <a class="waves-effect waves-light btn">Register</a>
+    	<!-- <button class="btn btn-floating btn-large waves-effect waves-light red" type="submit"><i class="material-icons">add</i></button> -->
     </div>
   </div>
 </form>
