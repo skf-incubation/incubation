@@ -26,3 +26,7 @@ useraccounts:flow-routing
 useraccounts:materialize
 accounts-facebook
 service-configuration
+accounts-base
+aldeed:collection2
+aldeed:autoform
+msavin:mongol

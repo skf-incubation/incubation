@@ -1,5 +1,3 @@
-incubation_events = ['Robotics','Coding','App Development','Bridge Building'];
-
 Template.user_form_layout.rendered = function() {
     // On template change, the DOM body classes will reactivly change
     document.body.className = "blue darken-2";
@@ -24,9 +22,7 @@ Template.logged_in_nav_bar.helpers({
 
 Template.logged_in_nav_bar.events({
     'click #logout': function () {
-    	Meteor.logout(function() {
-    		FlowRouter.go("/");
-    	});
+    	Meteor.logout();
     }
 });
 
