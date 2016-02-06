@@ -22,8 +22,6 @@ accounts-ui
 accounts-password
 kadira:flow-router
 kadira:blaze-layout
-useraccounts:flow-routing
-useraccounts:materialize
 accounts-facebook
 service-configuration
 accounts-base
