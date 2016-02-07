@@ -5,7 +5,7 @@ Template.dashboard_layout.rendered = function() {
 Template.front_page.rendered = function() {
     let u_id = Meteor.user();
     if(u_id) {
-        Materialize.toast("Welcome again ! "+u_id.username,3000);    
+        Materialize.toast("Hi again ! "+u_id.username,3000);    
     }
 }
 
