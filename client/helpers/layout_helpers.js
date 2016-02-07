@@ -1,11 +1,18 @@
-Template.user_form_layout.rendered = function() {
-    // On template change, the DOM body classes will reactivly change
-    document.body.className = "blue darken-2";
+Template.dashboard_layout.rendered = function() {
+    //document.body.className = "white";
 };
 
-Template.dashboard_layout.rendered = function() {
-    document.body.className = "white";
-};
+Template.front_page.rendered = function() {
+    let u_id = Meteor.user();
+    if(u_id) {
+        Materialize.toast("Welcome again ! "+u_id.username,3000);    
+    }
+}
+
+Template.logged_in_nav_bar.rendered = function() {
+
+}
+
 
 var initializeNav = function() {
     // Some template changes require jQuery plugin reinitialization

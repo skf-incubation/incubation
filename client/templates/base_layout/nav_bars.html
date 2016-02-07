@@ -11,13 +11,15 @@
 		</ul>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a href="/updates">Updates</a></li>
-				<li><a href="/events">Events</a></li>
+				<li><a href="/incubation-events">Events</a></li>
 			    <li><a href="/about">About</a></li>
 		    	{{#if userName}}
-		    		<li><a id="logout" class="waves-effect waves-dark" href="/">{{ userName }}</a></li>
-		    	{{/if}}
-		    	<li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
+		    		<li><a id="logout" class="waves-effect waves-dark" href="/profile">{{ userName }}</a></li>
+		    		{{else}}
+		    		<li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
 		    	<li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
+		    	{{/if}}
+		    	
 		    </ul>
 		    
 			<ul id="slide-out" class="side-nav">
@@ -32,13 +34,15 @@
 </template>
 
 
-
 <template name="logged_in_nav_bar">
 <div>
 	<nav class="blue darken-2">
 		<div class="nav-wrapper">
+		<ul id="nav-mobile" class="left hide-on-med-and-down">
+			<li><a href="/">INCUBATION</a></li>
+		</ul>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				
+				<li><a href="/incubation-events">Events</a></li>
 		    	<li><a class="waves-effect waves-dark" href="/">{{ userName }}</a></li>
 		    	<li><a id="logout" class="waves-effect waves-dark" href="/logout">Sign Out</a></li>
 		    </ul>
