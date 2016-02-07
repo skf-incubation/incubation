@@ -1,15 +1,28 @@
 <template name="nav_bar">
 <div>
 	<ul id="dropdown-who" class="dropdown-content">
-	    <li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
-	    <li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
+			<li><a href="/updates">Updates</a></li>
+				<li><a href="/incubation-events">Events</a></li>
+			    <li><a href="/about">About</a></li>
+	    		{{#if userName}}
+		    		<li><a id="logout" class="waves-effect waves-dark" href="/profile">{{ userName }}</a></li>
+		    		{{else}}
+		    		<li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
+		    	<li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
+		    	{{/if}}
 	</ul>
+
 	<nav class="blue darken-2">
 		<div class="nav-wrapper">
 		<ul id="nav-mobile" class="left hide-on-med-and-down">
 			<li><a href="/">INCUBATION</a></li>
 		</ul>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				
+				{{#if isInRole 'admin' }}
+				<li><a href="/manage-events">Manage Events</a></li>
+				{{/if}}
+				
 				<li><a href="/updates">Updates</a></li>
 				<li><a href="/incubation-events">Events</a></li>
 			    <li><a href="/about">About</a></li>
@@ -23,16 +36,19 @@
 		    </ul>
 		    
 			<ul id="slide-out" class="side-nav">
-			    <li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
-			    <li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
-			    <li><a href="/">About Us</a></li>
+			    {{#if userName}}
+		    		<li><a id="logout" class="waves-effect waves-dark" href="/profile">{{ userName }}</a></li>
+		    		{{else}}
+		    		<li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
+		    	<li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
+		    	{{/if}}
+			    <li><a href="/about">About Us</a></li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		</div>
 	</nav>
 </div>
 </template>
-
 
 <template name="logged_in_nav_bar">
 <div>
@@ -42,6 +58,11 @@
 			<li><a href="/">INCUBATION</a></li>
 		</ul>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				
+				{{#if isInRole 'admin' }}
+					<li><a href="/manage-events">Manage Events</a></li>
+				{{/if}}
+				
 				<li><a href="/incubation-events">Events</a></li>
 		    	<li><a class="waves-effect waves-dark" href="/">{{ userName }}</a></li>
 		    	<li><a id="logout" class="waves-effect waves-dark" href="/logout">Sign Out</a></li>
@@ -50,7 +71,6 @@
 		    	
 		   	    <li><a href="/sample">Sample List</a></li>
 
-	    		<!-- admin -->
 	    		<li><a id="logout" class="waves-effect waves-dark" href="/logout">Sign Out</a></li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>

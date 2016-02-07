@@ -36,7 +36,7 @@ p {
 	transform-style: inherit;
 }
 
-img {
+/* img {
   position: absolute;
   top: 50%;
   left: 35%;
@@ -51,7 +51,7 @@ img {
 
 img:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
+} */
 
 .slide:before {
   content: "";

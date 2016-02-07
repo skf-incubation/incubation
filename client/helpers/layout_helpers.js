@@ -9,10 +9,16 @@ Template.front_page.rendered = function() {
     }
 }
 
+Template.sign_up.helpers({
+    'userName': function () {
+        var user = Meteor.user();
+        return user !== null ? user.emails[0].address.split('@')[0] : null;
+    }
+})
+
 Template.logged_in_nav_bar.rendered = function() {
 
 }
-
 
 var initializeNav = function() {
     // Some template changes require jQuery plugin reinitialization
@@ -27,15 +33,18 @@ Template.logged_in_nav_bar.helpers({
     }
 });
 
+Template.nav_bar.helpers({
+    'userName': function () {
+        var user = Meteor.user();
+        return user !== null ? user.emails[0].address.split('@')[0] : null;
+    }
+});
+
 Template.logged_in_nav_bar.events({
     'click #logout': function () {
     	Meteor.logout();
     }
 });
-
-Template.sample_add.helpers({
-    event_id:incubation_events[0],
-})
 
 Template.nav_bar.rendered = initializeNav;
 Template.side_nav.rendered = initializeNav;
