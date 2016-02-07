@@ -51,6 +51,7 @@ insecure@1.0.4
 jquery@1.11.4
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.10.1
+kit:sweetalert@1.1.3
 lai:collection-extensions@0.1.4
 launch-screen@1.0.4
 less@2.5.1
