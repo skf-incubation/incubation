@@ -19,12 +19,12 @@ Template.register.events({
         if(err) {
             console.log(err.reason);
         } else {
+            Meteor.call('grant_admin_rights', Meteor.userId());
             FlowRouter.go('/dashboard');
         }
     });
     }
 });
-
 
 Template.signin.events({
     'submit .students-sign-in': function(event) {

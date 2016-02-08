@@ -1,0 +1,49 @@
+<template name="admin">
+
+	{{> Template.dynamic template=top}}
+	{{> Template.dynamic template=main}}
+</template>
+	
+<template name="manage_events">
+	<div class="container">
+		<ul class="collection" id="event-list">
+			<li class="collection-item avatar">
+      	<img src="images/yuna.jpg" alt="" class="circle">
+      	<span class="title">Event 1</span>
+      	<p>First Line <br>
+         Second Line
+      	</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i><span><br><button class="btn">Edit</button></span></a>
+      
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Event 2</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i><span><br><button class="btn">Edit</button></span></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Event 3</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i><span><br><button class="btn">Edit</button></span></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">Event 3</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i><span><br><button class="btn">Edit</button></span></a>
+    </li>
+	</ul>
+
+	<button class="btn">Add an event</button>
+	
+	</div>
+</template>
+

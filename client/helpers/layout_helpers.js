@@ -46,6 +46,10 @@ Template.logged_in_nav_bar.events({
     }
 });
 
+Template.manage_events.rendered = function () {
+    Materialize.showStaggeredList('#event-list');
+};
+
 Template.nav_bar.rendered = initializeNav;
 Template.side_nav.rendered = initializeNav;
 Template.logged_in_nav_bar.rendered = initializeNav;
