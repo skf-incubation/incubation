@@ -4,6 +4,19 @@
 	{{> Template.dynamic template=main}}
 </template>
 	
+<template name="add_event_form">
+  <div class="container">
+    <form action="">
+    <input type="text" value="Event Name">
+    <input type="text" value="Event Date">
+    <input type="text" value="Event Icon">
+    <input type="text" value="Event Fees">
+    <input class="add-event-btn" type="submit" value="Save Event">
+  </form>  
+  </div>
+  
+</template>
+
 <template name="manage_events">
 	<div class="container">
 		<ul class="collection" id="event-list">
@@ -42,7 +55,7 @@
     </li>
 	</ul>
 
-	<button class="btn">Add an event</button>
+	<button class="add-event btn">Add an event</button>
 	
 	</div>
 </template>
