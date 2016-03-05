@@ -1,9 +1,6 @@
 Template.register.events({
     'submit .student-register': function(event) {
         event.preventDefault();
-        setTimeout(function() {
-        swal('Awesome! now go the events page');
-        }, 4000);
         Accounts.createUser({
         username: (event.target.email.value).split("@",1)[0],
         email: event.target.email.value,

@@ -6,7 +6,7 @@ Template.manage_events.events({
 
 Template.manage_events.helpers({
 	'admin_manage_mode': function () {
-		return Sessiong.get('manage-event-mode');
+		return Session.get('manage-event-mode');
 	}
 });
 
