@@ -90,23 +90,23 @@ img:last-of-type {
 }
 
 #title {
-  background-image: url("/alps.jpg");
+  background-image: url("http://cdn.pcwallart.com/images/polygons-in-nature-wallpaper-1.jpg");
    background-attachment: fixed;  
 }
 
 #slide1:before {
-  background-image: url("/split.jpg");
+  background-image: url("http://eskipaper.com/images/polygon-wallpapers-1.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 
 #slide2 {
-  background-image: url("/nowhere.jpg");
+  background-image: url("http://img3.themebin.com/1920x1080/abstract_polygons.jpg");
   background-attachment: fixed;
 }
 
 #slide3:before {
-  background-image: url("http://lorempixel.com/640/480/abstract/5/");
+  background-image: url("http://cdn.superbwallpapers.com/wallpapers/abstract/orange-and-purple-polygons-25819-1920x1200.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
