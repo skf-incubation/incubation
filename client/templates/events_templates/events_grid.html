@@ -1,8 +1,10 @@
 <template name="events_grid">
     <h5>Upcoming Events on Incubation</h5>
     <div class="row">
-        <div class="col s4">{{> event_card}}</div>
-        <div class="col s4">{{> event_card}}</div>
-        <div class="col s4">{{> event_card}}</div>
+    {{#each events }}
+        <div class="col s4">{{> event_card }}</div>
+    {{/each}}
+        <!-- <div class="col s4">{{> event_card}}</div>
+        <div class="col s4">{{> event_card}}</div> -->
     </div>    
 </template>

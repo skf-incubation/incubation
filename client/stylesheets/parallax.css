@@ -36,23 +36,6 @@ p {
 	transform-style: inherit;
 }
 
-/* img {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-} */
-
 .slide:before {
   content: "";
   position: absolute;
@@ -105,12 +88,20 @@ img:last-of-type {
   background-attachment: fixed;
 }
 
+#slide1 img {
+    float: right;
+}
+
+#slide2 img {
+    float: left;
+}
+
 #slide3:before {
-  background-image: url("http://cdn.superbwallpapers.com/wallpapers/abstract/orange-and-purple-polygons-25819-1920x1200.jpg");
-  transform: translateZ(-1px) scale(2);
+  /* background-image: url("http://protiumdesign.com/wp-content/uploads/2014/12/Abstract-Polygon-Background-01-1024.jpg"); */
+  /* background-image: url("http://img3.themebin.com/1920x1080/abstract_polygons.jpg"); */
+  /* background-image: url("http://cdn.superbwallpapers.com/wallpapers/abstract/orange-and-purple-polygons-25819-1920x1200.jpg"); */
+  /* transform: translateZ(-1px) scale(1.5); */
+  background-color: #90A4AE;
   z-index:-1;
 }
 
-#slide4 {
-  background: #222;
-}

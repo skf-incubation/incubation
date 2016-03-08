@@ -102,3 +102,13 @@ textarea.materialize-textarea:focus.valid*/
 #event-list li {
 	opacity: 0;
 }
+
+
+.team {
+	padding: 30px;
+}
+
+.team img {
+	width: 100%;
+	height: 100%;
+}
