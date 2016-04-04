@@ -1,6 +1,7 @@
 Template.events_grid.helpers({
 	'events': function() {
-		return [
+		Meteor.collections('events').find().fetch();
+		/*return [
 	{
 		'event_name':"Robotics",
 		'event_date': new Date(),
@@ -16,6 +17,6 @@ Template.events_grid.helpers({
 		'event_date': new Date(),
 		'event_desc':"kfslkfjlkse",
 	},
-	]
+	]*/
 	} 
 });
