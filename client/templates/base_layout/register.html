@@ -41,6 +41,14 @@
                   <option value="B_CE">Civil Engineering</option>
                 </optgroup>
               </select>
+              <select name="eventname" class="browser-default">
+                <option value="no-dept" disabled selected>Registering For</option>
+                <optgroup label="events"> 
+                {{#each events}}
+                  <option value="B_CSE">{{name}}</option>
+                  {{/each }}
+                </optgroup>
+              </select>
             </div>
             <div class="input-field col s12">
               <input id="roll" type="number" autocomplete="off" name="roll" min="0" length="4" class="validate">

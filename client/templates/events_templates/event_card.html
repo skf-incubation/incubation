@@ -1,16 +1,85 @@
 <template name="event_card">
-	<div class="card">
+
+	<!-- Modal for registration of events -->
+<div id="event-register" class="modal">
+  <form class="student-register">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="username" type="text" autocomplete="off" name="name" class="validate">
+              <label for="username">Full Name</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="email" type="email" autocomplete="off" name="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" autocomplete="off" name="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+            <br><br><br>
+
+            <div class="input-field col s12">
+               
+              <select name="dept" class="browser-default">
+                <option value="no-dept" disabled selected>Select Department</option>
+                <optgroup label="Diploma">
+                  <option value="D_CE">Civil Engineering</option>
+                  <option value="D_ME">Mechanical Engineering</option>
+                </optgroup>
+                <optgroup label="B.Tech">
+                  <option value="B_CSE">Computer Science Engineering</option>
+                  <option value="B_ECE_1">Electronics and Communications Engineering 1</option>
+                  <option value="B_ECE_2">Electronics and Communications Engineering 2</option>
+                  <option value="B_AEIE">Applied Electronics and Instrumentation Engineering</option>
+                  <option value="B_EE_1">Electrical Engineering 1</option>
+                  <option value="B_EE_2">Electrical Engineering 2</option>
+                  <option value="B_ME">Mechanical Engineering</option>
+                  <option value="B_CE">Civil Engineering</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="input-field col s12">
+              <input id="roll" type="number" autocomplete="off" name="roll" min="0" length="4" class="validate">
+              <label for="makautroll">Roll No</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="makautroll" type="number" autocomplete="off" name="makautroll" min="0" length="12" class="validate">
+              <label for="makautroll">M.A.K.A.U.T. (WBUT) Roll No.</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="year" type="number" min="1" max="4" autocomplete="off" name="year" class="validate">
+              <label for="year">Current Year</label>
+            </div>
+            <div class="input-field col s12">
+              <button type="submit" name="action" formmethod="POST" formaction="/register" class="btn waves-effect waves-light">Register<i class="material-icons right">send</i></button>
+            </div>
+          </div>
+        </form>
+  </div>
+
+<!-- Event Cards -->
+
+  <div class="card">
+    
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="http://iitbhu.ac.in/events/ece/aayam2012/images/eventimages/soccer.jpg">
+      <img class="activator" src={{icon}}>
     </div>
+    
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">{{event_name}}<i class="material-icons right">more_vert</i></span>
-      <h6 class="card-title activator grey-text text-darken-4">{{event_date}}</h6>
-      <a class="waves-effect waves-light btn" href="/register/event">Register for this event</a>
+      <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>
+      <h6 class="card-title activator grey-text text-darken-4">{{time}}</h6>
+      <a id="event-register-btn"
+        class="waves-effect waves-light btn"
+        onclick="$('#event-register').openModal();"
+        href="#event-register-modal">Register for this event
+      </a>
     </div>
+
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-5">Card Title<i class="material-icons right">close</i></span>
-      <p>{{event_desc}}</p>
+      <span class="card-title grey-text text-darken-5">{{caption}}<i class="material-icons right">close</i></span>
+      <p>{{details}}</p>
     </div>
   </div>
+
 </template>

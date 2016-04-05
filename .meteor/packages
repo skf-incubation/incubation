@@ -31,3 +31,5 @@ kit:sweetalert
 alanning:roles
 standard-minifier-css
 standard-minifier-js
+materialize:materialize
+webtempest:animate

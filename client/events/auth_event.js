@@ -10,7 +10,8 @@ Template.register.events({
             roll: event.target.roll.value,
             makautroll: event.target.makautroll.value,
             dept: event.target.dept.value,
-            year: event.target.year.value
+            year: event.target.year.value,
+            registered_for: event.target.eventname.value,
         }
     },(err) => {
         if(err) {

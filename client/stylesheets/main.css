@@ -112,3 +112,7 @@ textarea.materialize-textarea:focus.valid*/
 	width: 100%;
 	height: 100%;
 }
+
+#event-register-modal {
+	padding: 15px;
+}
