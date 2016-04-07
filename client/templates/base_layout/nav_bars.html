@@ -5,12 +5,12 @@
 			<li><a href="/updates">Updates</a></li>
 				<li><a href="/incubation-events">Events</a></li>
 			    <li><a href="/about">About</a></li>
-	    		<!-- {{#if userName}}
-	    				    		<li><a id="logout" class="waves-effect waves-dark" href="/profile">{{ userName }}</a></li>
-	    				    		{{else}}
-	    				    		<li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
-	    				    	<li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
-	    				    	{{/if}} -->
+	    		{{#if userName}}
+	    			<li><a id="logout" class="waves-effect waves-dark" href="/profile">{{ userName }}</a></li>
+	    		{{else}}
+					<li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
+					<li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
+	    		{{/if}}
 	</ul>
 
 
@@ -28,16 +28,16 @@
 				<li><a href="/updates">Updates</a></li>
 				<li><a href="/incubation-events">Events</a></li>
 			    <li><a href="/about">About</a></li>
-		    	<!-- {{#if userName}}
+		    	{{#if userName}}
 		    		<li><a id="logout" class="waves-effect waves-dark" href="/profile">{{ userName }}</a></li>
 		    		{{else}}
 		    		<li><a class="waves-effect waves-dark" href="/sign-in">Login</a></li>
 		    	<li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
-		    	{{/if}} -->
+		    	{{/if}}
 		    	
 		    </ul>
 		    
-			<!-- <ul id="slide-out" class="side-nav">
+			<ul id="slide-out" class="side-nav">
 			    {{#if userName}}
 					    		<li><a id="logout" class="waves-effect waves-dark" href="/profile">{{ userName }}</a></li>
 					    		{{else}}
@@ -45,7 +45,7 @@
 					    	<li><a class="waves-effect waves-dark" href="/sign-up">Sign Up</a></li>
 					    	{{/if}}
 			    <li><a href="/about">About Us</a></li>
-			</ul> -->
+			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		</div>
 	</nav>
@@ -66,12 +66,10 @@
 				{{/if}}
 				
 				<li><a href="/incubation-events">Events</a></li>
-		    	<!-- <li><a id="logout" class="waves-effect waves-dark" href="/logout">Sign Out</a></li> -->
+		    	<li><a id="logout" class="waves-effect waves-dark" href="/logout">Sign Out</a></li>
 		    </ul>
 			<ul id="slide-out" class="side-nav">
-		    	
-
-	    		<!-- <li><a id="logout" class="waves-effect waves-dark" href="/logout">Sign Out</a></li> -->
+	    		<li><a id="logout" class="waves-effect waves-dark" href="/logout">Sign Out</a></li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		</div>
